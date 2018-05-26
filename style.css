@@ -57,11 +57,11 @@ div.container {
 }
 
 .btn-circle {
-  width: 45px;
-  height: 45px;
-  padding: 6px 0;
-  line-height: 1.428571429;
-  border-radius: 22.5px;
+    width: 45px;
+    height: 45px;
+    padding: 6px 0;
+    line-height: 1.428571429;
+    border-radius: 22.5px;
 }
 
 .icon {
@@ -70,9 +70,9 @@ div.container {
 }
 
 img {
-  opacity: 1;
-  transition: .5s ease;
-  backface-visibility: hidden;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
 }
 
 a:hover {
@@ -80,9 +80,9 @@ a:hover {
 }
 
 ::selection {
-  background: #ffb7b7; /* WebKit/Blink Browsers */
+    background: #ffb7b7; /* WebKit/Blink Browsers */
 }
 
 ::-moz-selection {
-  background: #ffb7b7; /* Gecko Browsers */
+    background: #ffb7b7; /* Gecko Browsers */
 }
