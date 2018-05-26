@@ -22,7 +22,7 @@
 /* Style */
 
 mark {
-    background-color: #F5FFED;
+   /* background-color: #F5FFED;*/
 }
 
 li {
@@ -33,9 +33,14 @@ body {
     cursor: crosshair;
     text-align: center;
     background-color: #f2fffd;
+    font-family: 'Roboto Condensed';
 }
 
 h1 {
+
+}
+
+h3 {
 
 }
 
@@ -48,7 +53,6 @@ div.polaroid {
 }
 
 div.container {
-    text-align: center;
     padding: 10px 20px;
 }
 
@@ -58,4 +62,27 @@ div.container {
   padding: 6px 0;
   line-height: 1.428571429;
   border-radius: 22.5px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px:
+}
+
+img {
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+::selection {
+  background: #ffb7b7; /* WebKit/Blink Browsers */
+}
+
+::-moz-selection {
+  background: #ffb7b7; /* Gecko Browsers */
 }
