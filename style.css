@@ -1,0 +1,53 @@
+
+
+
+/* Tags */
+
+#home {
+
+}
+
+#about {
+
+}
+
+#projects {
+
+}
+
+#mobile {
+
+}
+
+/* Style */
+
+body {
+    cursor: crosshair;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+h1 {
+
+}
+
+div.polaroid {
+    display: inline-block;
+    border: 1px solid #000000;
+    width: 232px;
+    background-color: white;
+
+}
+
+div.container {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.btn-circle {
+  width: 45px;
+  height: 45px;
+  padding: 6px 0;
+  line-height: 1.428571429;
+  border-radius: 22.5px;
+}
