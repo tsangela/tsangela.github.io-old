@@ -21,10 +21,18 @@
 
 /* Style */
 
+mark {
+    background-color: #F5FFED;
+}
+
+li {
+    background-color: transparent;
+}
+
 body {
     cursor: crosshair;
     text-align: center;
-    background-color: #FFFFFF;
+    background-color: #f2fffd;
 }
 
 h1 {
