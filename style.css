@@ -59,7 +59,6 @@ div.container {
 .btn-circle {
     width: 45px;
     height: 45px;
-    padding: 6px 0;
     line-height: 1.428571429;
     border-radius: 22.5px;
 }
@@ -69,10 +68,15 @@ div.container {
     height: 40px:
 }
 
+.li-square {
+    list-style-type: square;
+}
+
 img {
     opacity: 1;
     transition: .5s ease;
     backface-visibility: hidden;
+    padding: 5px 5px;
 }
 
 a:hover {
