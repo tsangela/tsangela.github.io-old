@@ -1,6 +1,3 @@
-
-
-
 /* Tags */
 
 #home {
@@ -31,17 +28,15 @@ li {
 
 body {
     cursor: crosshair;
-    text-align: center;
-    background-color: #f2fffd;
+    background-color: #E8FFFB;
     font-family: 'Roboto Condensed';
 }
 
-h1 {
-
-}
-
-h3 {
-
+img {
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    padding: 5px 5px;
 }
 
 div.polaroid {
@@ -56,6 +51,12 @@ div.container {
     padding: 10px 20px;
 }
 
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .btn-circle {
     width: 45px;
     height: 45px;
@@ -65,22 +66,36 @@ div.container {
 
 .icon {
     width: 40px;
-    height: 40px:
+    height: 40px;
 }
 
-.li-square {
-    list-style-type: square;
+.img-fluid {
+    min-width: 220px;
 }
 
-img {
-    opacity: 1;
-    transition: .5s ease;
-    backface-visibility: hidden;
-    padding: 5px 5px;
+.carousel-inner > .item > img {
+    margin: 0 auto;
+    height: none;
 }
 
-a:hover {
-    text-decoration: none;
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23aaa' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23aaa' viewBox='0 0 8 8'%3E%3Cpath d='M1.5 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.credits {
+    font-size: 10px;
+}
+
+.not-allowed {
+    cursor: not-allowed;
+}
+
+.help {
+    cursor: help;
 }
 
 ::selection {
