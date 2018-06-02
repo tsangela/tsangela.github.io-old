@@ -43,7 +43,7 @@ body {
 .welcome-text {
     position: absolute;
     left: 0;
-    top: 50%;
+    top: 45%;
     width: 100%;
     text-align: center;
     color: #ffffff;
@@ -53,7 +53,7 @@ body {
 .welcome-text span.border {
     padding: 18px;
 /*    padding-left: 40px;*/
-    font-size: 70px;
+    font-size: 60px;
 /*    letter-spacing: 25px;*/
     opacity: 0.8;
 }
@@ -139,7 +139,7 @@ img {
 }
 
 .img-fluid {
-    min-width: 220px;
+    min-width: 250px;
 }
 
 .carousel-inner > .item > img {
