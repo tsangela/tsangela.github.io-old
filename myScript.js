@@ -6,7 +6,7 @@ $("a, h3, summary").hover(function(){
 });
 
 // Bold
-$("").hover(function(){
+$("h4").hover(function(){
     $(this).css("font-weight", "bold");
     }, function(){
     $(this).css("font-weight", "normal");

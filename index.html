@@ -21,10 +21,8 @@
 
 <body>
 
-<div id="outside" class="container-fluid">
-
-    <div id="navigation">
-        <nav class="navbar navbar-toggleable-md navbar-light bg-faded fixed-top" style="background-color: #ffffff;">
+    <div class="navigation">
+        <nav class="navbar navbar-toggleable-md navbar-light bg-faded fixed-top">
             <a class="navbar-brand" href="#top">Angela Tsang</a>
 
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
@@ -40,7 +38,8 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Projects</a>
+                            Projects
+                        </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="#hungrycat">Hungry Cat</a>
                             <div class="dropdown-divider"></div>
@@ -58,7 +57,7 @@
         </nav>
     </div>
 
-    <div id="welcome" class="bg-1 row">
+    <div class="bg-1 row">
         <div class="welcome-text">
             <span class="border">W E L C O M E</span>
         </div>
@@ -83,7 +82,7 @@
 
             <div style="text-align: center">
                 <h3 align="center"><b>Hungry Cat</b> (Java)</h3>
-                <img src="images/hungrycat/cat.png"/>
+                <img width="50" src="images/hungrycat/cat.png"/>
             </div>
 
             <p align="justify">A simple snake-like game featuring a very hungry cat. You play as the cat! Use the arrow keys to move around,
@@ -92,7 +91,7 @@
             </p>
 
             <div align="middle">
-                <a href="https://github.com/tsangela/HungryCat"><button type="button" class="btn btn-outline-secondary">Check out the code!</button></a>
+                <a href="https://github.com/tsangela/HungryCat"><button type="button" class="btn btn-outline-danger btn-lg">Check out the code!</button></a>
             </div>
 
             <br>
@@ -189,15 +188,15 @@
             <div>
                 <a data-toggle="collapse" href="#collapseDogs" role="button" aria-expanded="false"
                    aria-controls="collapseDogs">
-                    <img class="rounded-circle mr-3 not-allowed me" src="images/me.jpg" alt="Me!">
+                    <img class="rounded-circle mr-3 not-allowed me circle-border" src="images/me.jpg" alt="Me!">
                 </a>
 
-                <br>
+                <br><br>
 
                 <div class="collapse" align="center" id="collapseDogs">
-                    <img class="rounded-circle mr-3" src="images/coco.png" width="150" height="150" alt="Coco!">
-                    <br>
-                    <img class="rounded-circle mr-3" src="images/kobe.jpg" width="150" height="150" alt="Kobe!">
+                    <img class="rounded-circle mr-3 circle-border" src="images/coco.png" width="150" height="150" alt="Coco!">
+                    <br><br>
+                    <img class="rounded-circle mr-3 circle-border" src="images/kobe.jpg" width="150" height="150" alt="Kobe!">
                 </div>
             </div>
 
@@ -205,13 +204,15 @@
 
                 <div class="row pad-thin about-card">
                     <div class="col">
-                        <h4 class="mt-0"><i>Hello, World!</i></h4>
+                        <h4>Hello, World!</h4>
                         <p>
-                            My name is <a>Angela Tsang</a>. I am a second year B.Sc. Computer
-                            Science student at the lovely University of British Columbia,
-                            home of the Thunderbirds.
-
-                            In my free time, I can be found walking my dogs
+                            My name is <a>Angela Tsang</a> and I am a second year B.Sc.
+                            Computer Science student at the lovely University of British
+                            Columbia, home of the Thunderbirds. In my free time, I can be
+                            found walking my dogs, playing music with friends, and fiddling
+                            with new programming languages. I am currently seeking a <a>co-op
+                            placement</a> for the 2019 winter term, beginning in January in
+                            software development!
                         </p>
                     </div>
                 </div>
@@ -221,10 +222,11 @@
                 <div id="contact" class="row pad-thin about-card">
                     <div class="col">
                         <h4>Contact:</h4>
-                        <p>Email:&nbsp;<a href="mailto:tsangangela63@gmail.com">tsangangela63@gmail.com</a>
-                        </p>
                         <a href="https://github.com/tsangela/">
                             <img src="images/github.png" class="icon">
+                        </a>
+                        <a href="mailto:tsangangela63@gmail.com">
+                            <img src="images/email.png" class="icon">
                         </a>
                     </div>
                 </div>
@@ -237,8 +239,6 @@
         <!--<div class="col" style="background-color: #DFF89F"></div>-->
         <!--<div class="col" style="background-color: #9FF8E5"></div>-->
     <!--</div>-->
-
-</div>
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
