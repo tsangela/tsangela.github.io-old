@@ -1,5 +1,6 @@
 html, body, #outside {
     height: 100%;
+    width: 100%;
 }
 
 body {
@@ -45,9 +46,9 @@ body {
 
 .welcome-text span.border {
     padding: 18px;
-    padding-left: 40px;
-    font-size: 60px;
-    letter-spacing: 25px;
+/*    padding-left: 40px;*/
+    font-size: 70px;
+/*    letter-spacing: 25px;*/
     opacity: 0.8;
 }
 
@@ -108,6 +109,11 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.me {
+    width: 200px;
+    height: 200px;
 }
 
 .btn-circle {
