@@ -1,8 +1,15 @@
 // Italic
-$("a, h3, h6").hover(function(){
+$("a, h3, summary").hover(function(){
     $(this).css("font-style", "italic");
     }, function(){
     $(this).css("font-style", "normal");
+});
+
+// Bold
+$("").hover(function(){
+    $(this).css("font-weight", "bold");
+    }, function(){
+    $(this).css("font-weight", "normal");
 });
 
 // Links
@@ -28,6 +35,14 @@ $("carousel-control-prev, carousel-control-next").hover(function(){
 
 $("#hungrycatpreview").carousel('pause');
 
+$(document).click(function(event) {
+    var clickover = $(event.target);
+    var $navbar = $(".navbar-collapse");
+    var _opened = $navbar.hasClass("in");
+    if (_opened === true && !clickover.hasClass("navbar-toggler")) {
+        $navbar.collapse('hide');
+    }
+});
 
 // Headers
 // do the # fading thing upon hover
