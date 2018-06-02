@@ -71,7 +71,7 @@ body {
 }
 
 .about-card {
-    background-color: #EFE8FF;
+    background-color: #F0F0F0;
     text-align: justify;
     color: #0;
 }
@@ -90,7 +90,7 @@ body {
 
 summary {
     padding-left: 5px;
-    background-color: #EFE8FF;
+    background-color: #F0F0F0;
 }
 
 mark {
