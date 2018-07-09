@@ -20,11 +20,15 @@ img {
     padding: 5px 5px;
 }
 
+a:hover { text-decoration: none; }
+
 /* Hover */
+/*
 a:hover,h3:hover,summary:hover { text-decoration: none; font-style: italic; }
 a:hover { cursor: help; }
 h4:hover { font-weight: bold; }
 img:hover { opacity: 0.5; }
+*/
 
 .navbar {
     background-color: #ffffff;
