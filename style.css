@@ -1,14 +1,30 @@
-html, body, #outside {
+html, body {
+    position: absolute;
     height: 100%;
     width: 100%;
-}
-
-body {
     cursor: crosshair;
     /*background-color: #E8FFFB;*/
     background-color: #ffffff;
     font-family: 'Roboto Condensed';
 }
+
+summary {
+    min-width:100%;
+    padding-left: 5px;
+    background-color: #F0F0F0;
+}
+
+img {
+    transition: .5s ease;
+    backface-visibility: hidden;
+    padding: 5px 5px;
+}
+
+/* Hover */
+a:hover,h3:hover,summary:hover { text-decoration: none; font-style: italic; }
+a:hover { cursor: help; }
+h4:hover { font-weight: bold; }
+img:hover { opacity: 0.5; }
 
 .navbar {
     background-color: #ffffff;
@@ -23,64 +39,46 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    transition: .5s ease;
 }
 
 .bg-1 {
     background-image: url("images/bg-welcome.jpg");
-    min-height: 100%;
+    min-height: 60%;
 }
 
 .bg-projects {
     background-image: url("images/bg-projects.jpg");
-    min-height: 30%;
+    min-height: 20%;
 }
 
 .bg-about {
     background-image: url("images/bg-about.jpg");
-    min-height: 30%;
+    min-height: 20%;
 }
 
-.welcome-text {
+[class*="header"] {
     position: absolute;
-    left: 0;
-    top: 45%;
-    width: 100%;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
     text-align: center;
     color: #ffffff;
     opacity: 0.8;
 }
 
-.welcome-text span.border {
-    padding: 18px;
-/*    padding-left: 40px;*/
+.header-welcome {
     font-size: 65px;
     font-size: 10vw;
-/*    letter-spacing: 25px;*/
-    opacity: 0.8;
 }
 
-.header-text {
-    position: absolute;
-    left: 0;
-    top: 40%;
-    width: 100%;
-    text-align: center;
-    color: #ffffff;
-    opacity: 0.8;
+.header-section {
     letter-spacing: 25px;
-}
-
-#updates {
-    background-color: #ffffff;
-}
-
-.about-me {
-    background-color: #ffffff;
 }
 
 .about-card {
     background-color: #F0F0F0;
-    text-align: justify;
     color: #0;
 }
 
@@ -96,22 +94,6 @@ body {
     padding: 10px 10px;
 }
 
-summary {
-    padding-left: 5px;
-    background-color: #F0F0F0;
-}
-
-mark {
-   /* background-color: #F5FFED;*/
-}
-
-img {
-    opacity: 1;
-    transition: .5s ease;
-    backface-visibility: hidden;
-    padding: 5px 5px;
-}
-
 .center {
     display: block;
     margin-left: auto;
@@ -119,13 +101,22 @@ img {
 }
 
 .me {
-    width: 200px;
-    height: 200px;
+    width: 30vw;
+    max-width: 200px;
+    height: auto;
+    border-radius: 100%;
+    border: 1px solid black;
+    cursor: not-allowed;
 }
 
-.circle-border {
+.dog {
+    width: 30vw;
+    max-width: 150px;
+    height: auto;
+    border-radius: 100%;
     border: 1px solid black;
 }
+
 
 .btn-circle {
     width: 45px;
@@ -158,14 +149,7 @@ img {
 
 .credits {
     font-size: 10px;
-}
-
-.not-allowed {
-    cursor: not-allowed;
-}
-
-.help {
-    cursor: help;
+    min-width: 250px;
 }
 
 ::selection {
@@ -176,4 +160,28 @@ img {
 ::-moz-selection {
     background: #EFE8FF; /* Gecko Browsers */
     /*background: #ffb7b7*/
+}
+
+/* For tablets: */
+@media only screen and (min-width: 600px) {
+    .bg-1 {
+        min-height: 100%;
+    }
+
+    .bg-projects {
+        min-height: 30%;
+    }
+
+    .bg-about {
+        min-height: 30%;
+    }
+
+    .about-card {
+        text-align: justify;
+    }
+}
+
+/* For desktop: */
+@media only screen and (min-width: 768px) {
+
 }
