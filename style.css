@@ -23,12 +23,10 @@ img {
 a:hover { text-decoration: none; }
 
 /* Hover */
-/*
 a:hover,h3:hover,summary:hover { text-decoration: none; font-style: italic; }
-a:hover { cursor: help; }
+/*a:hover { cursor: help; }*/
 h4:hover { font-weight: bold; }
 img:hover { opacity: 0.5; }
-*/
 
 .navbar {
     background-color: #ffffff;
@@ -135,7 +133,13 @@ img:hover { opacity: 0.5; }
 }
 
 .cat-preview {
-    min-width: 250px;
+    min-width: 300px;
+    width: 400px;
+    height: auto;
+}
+
+.themes-preview {
+    min-width: 500px;
 }
 
 .carousel-inner > .item > img {
@@ -154,6 +158,18 @@ img:hover { opacity: 0.5; }
 .credits {
     font-size: 10px;
     min-width: 250px;
+}
+
+.theme-preview {
+    width: 85vw;
+}
+
+.static {
+    position: absolute;
+}
+
+.static:hover {
+    opacity: 0;
 }
 
 ::selection {
@@ -183,9 +199,14 @@ img:hover { opacity: 0.5; }
     .about-card {
         text-align: justify;
     }
+
+
 }
 
 /* For desktop: */
 @media only screen and (min-width: 768px) {
-
+    .theme-preview {
+        min-width: 380px;
+        width: 50vw;
+    }
 }
