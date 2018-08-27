@@ -6,6 +6,7 @@ html, body {
     /*background-color: #E8FFFB;*/
     background-color: #ffffff;
     font-family: 'Roboto Condensed';
+    scroll-behavior: smooth;
 }
 
 summary {
