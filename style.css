@@ -26,13 +26,18 @@ img:hover {
     opacity: 0.5;
 }
 
-a:hover, h3:hover, summary:hover {
-    text-decoration: none;
+h3:hover {
     font-style: italic;
 }
 
-h4:hover {
+a:hover, h4:hover {
+    text-decoration: none;
     font-weight: bold;
+}
+
+.emphasize:hover {
+    text-decoration: overline;
+    color: #d9534f;
 }
 
 .navbar {
