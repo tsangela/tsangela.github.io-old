@@ -17,7 +17,7 @@ summary {
 }
 
 img {
-    transition: .5s ease;
+    transition: .3s ease;
     backface-visibility: hidden;
     padding: 5px 5px;
 }
@@ -26,8 +26,12 @@ img:hover {
     opacity: 0.5;
 }
 
+h3 {
+    transition: 0.3s ease;
+}
+
 h3:hover {
-    font-style: italic;
+    letter-spacing: 1px;
 }
 
 a:hover, h4:hover {
@@ -35,7 +39,12 @@ a:hover, h4:hover {
     font-weight: bold;
 }
 
+.emphasize {
+    transition: .3s ease;
+}
+
 .emphasize:hover {
+    letter-spacing: 1px;
     text-decoration: overline;
     color: #d9534f;
 }
@@ -49,7 +58,7 @@ a:hover, h4:hover {
     opacity: 1;
     background: no-repeat fixed center;
     background-size: cover;
-    transition: .5s ease;
+    transition: .3s ease;
 }
 
 .bg-1 {
