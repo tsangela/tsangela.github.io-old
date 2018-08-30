@@ -81,6 +81,10 @@ h4:hover {
     letter-spacing: 25px;
 }
 
+.project-title {
+    text-align: center;
+}
+
 .about-card {
     background-color: #F0F0F0;
     color: black;
@@ -167,14 +171,6 @@ h4:hover {
     height: auto;
 }
 
-.static {
-    position: absolute;
-}
-
-.static:hover {
-    opacity: 0;
-}
-
 ::selection {
     background: #EFE8FF; /* WebKit/Blink Browsers */
     /*background: #ffb7b7*/
@@ -212,6 +208,6 @@ h4:hover {
 @media only screen and (min-width: 768px) {
     .theme-preview {
         min-width: 380px;
-        width: 40vw;
+        width: 45vw;
     }
 }
