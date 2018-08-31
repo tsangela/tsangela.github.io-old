@@ -16,6 +16,10 @@ summary {
     background-color: #F0F0F0;
 }
 
+summary:hover {
+    background-color: #E0E0E0;
+}
+
 img {
     transition: .3s ease;
     backface-visibility: hidden;
@@ -40,19 +44,46 @@ a:hover, h4:hover {
 }
 
 .emphasize {
-    transition: .3s ease;
+    transition: .2s ease;
 }
 
 .emphasize:hover {
-    letter-spacing: 1px;
-    text-decoration: overline;
-    color: #d9534f;
+    /*letter-spacing: 1px;*/
+    /*text-decoration: overline;*/
+    background-color: #d9534f;
+    color: white;
+    /*color: #d9534f;*/
+}
+
+.push-right {
+    transition: .3s ease;
+}
+
+.push-right:hover {
+    padding-left: 50px;
+}
+
+.pad-thick {
+    padding: 30px 50px;
+}
+
+.pad-thin {
+    padding: 10px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .navbar {
     background-color: white;
     opacity: 0.8;
 }
+
+/* section headers
+----------------------------------------------------------------------*/
 
 .bg-1, .bg-projects, .bg-about {
     opacity: 1;
@@ -99,63 +130,16 @@ a:hover, h4:hover {
     text-align: center;
 }
 
-.about-card {
-    background-color: #F0F0F0;
-    color: black;
-}
-
-.container-fluid {
-    padding: 0 0;
-}
-
-.pad-thick {
-    padding: 30px 50px;
-}
-
-.pad-thin {
-    padding: 10px 10px;
-}
-
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.me {
-    width: 30vw;
-    max-width: 200px;
-    height: auto;
-    border-radius: 100%;
-    border: 1px solid black;
-    cursor: not-allowed;
-}
-
-.dog {
-    width: 30vw;
-    max-width: 150px;
-    height: auto;
-    border-radius: 100%;
-    border: 1px solid black;
-}
-
-
-.btn-circle {
-    width: 45px;
-    height: 45px;
-    line-height: 1.428571429;
-    border-radius: 22.5px;
-}
-
-.icon {
-    width: 50px;
-    height: 50px;
-}
+/* projects
+----------------------------------------------------------------------*/
 
 .cat-preview {
-    min-width: 300px;
-    width: 400px;
-    height: auto;
+    width: 70vw;
+}
+
+.cat-details {
+    width: 70vw;
+    transition: .3s ease;
 }
 
 .carousel-inner > .item > img {
@@ -164,11 +148,11 @@ a:hover, h4:hover {
 }
 
 .carousel-control-prev-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23aaa' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
 }
 
 .carousel-control-next-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23aaa' viewBox='0 0 8 8'%3E%3Cpath d='M1.5 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 8 8'%3E%3Cpath d='M1.5 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 }
 
 .credits {
@@ -176,12 +160,8 @@ a:hover, h4:hover {
     min-width: 250px;
 }
 
-.theme-preview {
+.carousel-item > .theme-preview {
     width: 80vw;
-}
-
-.carousel-item .themes-preview {
-    width: 200px;
     height: auto;
 }
 
@@ -195,8 +175,42 @@ a:hover, h4:hover {
     /*background: #ffb7b7*/
 }
 
-/* For tablets: */
+
+/* about me
+----------------------------------------------------------------------*/
+
+.about-card {
+    background-color: #F0F0F0;
+    color: black;
+}
+
+.me {
+    width: 30vw;
+    max-width: 200px;
+    height: auto;
+    border-radius: 100%;
+    border: 1px solid black;
+}
+
+.dog {
+    width: 30vw;
+    max-width: 150px;
+    height: auto;
+    border-radius: 100%;
+    border: 1px solid black;
+}
+
+.icon {
+    width: 50px;
+    height: auto;
+}
+
+/* For tablets:
+----------------------------------------------------------------------*/
 @media only screen and (min-width: 600px) {
+
+    /* section headers
+    ------------------------------------------------------------------*/
     .bg-1 {
         height: 100%;
     }
@@ -209,19 +223,56 @@ a:hover, h4:hover {
         height: 30%;
     }
 
-    .theme-preview {
+    /* projects
+    ------------------------------------------------------------------*/
+
+    .cat-preview {
+        width: 30vw;
+    }
+
+    .cat-details {
+        width: 100%;
+    }
+
+    .carousel-item > .theme-preview {
         width: 85vw;
     }
 
+    /* about me
+    ----------------------------------------------------------------------*/
     .about-card {
         text-align: justify;
     }
+
+    .icon {
+        width: 60px;
+    }
 }
 
-/* For desktop: */
+/* For desktop:
+----------------------------------------------------------------------*/
 @media only screen and (min-width: 768px) {
-    .theme-preview {
+
+    /* projects
+    ------------------------------------------------------------------*/
+    .cat-preview {
+        width: 40vw;
+        max-width: 400px;
+    }
+
+    .cat-details {
+        width: 100%;
+    }
+
+    .carousel-item > .theme-preview {
         min-width: 380px;
         width: 45vw;
+    }
+
+
+    /* about me
+    ------------------------------------------------------------------*/
+    .icon {
+        width: 70px;
     }
 }
