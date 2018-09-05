@@ -1,6 +1,3 @@
-// Carousel
-$("#hungrycatpreview").carousel('pause');
-
 $(document).click(function (event) {
     var clickover = $(event.target);
     var $navbar = $(".navbar-collapse");

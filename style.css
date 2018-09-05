@@ -27,7 +27,7 @@ img {
 }
 
 img:hover {
-    opacity: 0.5;
+    opacity: 0.7;
 }
 
 h3 {
@@ -89,6 +89,7 @@ a:hover, h4:hover {
     opacity: 1;
     background: no-repeat fixed center;
     background-size: cover;
+    font-family: "VT323", monospace;
     transition: .3s ease;
 }
 
@@ -114,16 +115,18 @@ a:hover, h4:hover {
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
-    opacity: 0.8;
 }
 
 .header-welcome {
     font-size: 65px;
-    font-size: 10vw;
+    font-size: 12vw;
+    transition: .3s ease;
+    opacity: 0.7;
 }
 
-.header-section {
+.header-section > h1 {
     letter-spacing: 25px;
+    padding-left: 25px;
 }
 
 .project-title {
@@ -203,6 +206,7 @@ a:hover, h4:hover {
 .icon {
     width: 50px;
     height: auto;
+    transition: 0s;
 }
 
 /* For tablets:
@@ -221,6 +225,10 @@ a:hover, h4:hover {
 
     .bg-about {
         height: 30%;
+    }
+
+    .header-section > h1 {
+        font-size: 6vw;
     }
 
     /* projects
@@ -252,6 +260,13 @@ a:hover, h4:hover {
 /* For desktop:
 ----------------------------------------------------------------------*/
 @media only screen and (min-width: 768px) {
+
+    /* section headers
+    ------------------------------------------------------------------*/
+    .header-welcome {
+        font-size: 90px;
+        font-size: 12vw;
+    }
 
     /* projects
     ------------------------------------------------------------------*/
