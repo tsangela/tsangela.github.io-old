@@ -31,15 +31,24 @@ img:hover {
 }
 
 h3 {
+    font-weight: bold;
     transition: 0.3s ease;
 }
 
 h3:hover {
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
 }
 
-a:hover, h4:hover {
+a:hover {
     text-decoration: none;
+}
+
+h4:hover {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar-brand:hover {
     font-weight: bold;
 }
 
@@ -136,6 +145,12 @@ a:hover, h4:hover {
 /* projects
 ----------------------------------------------------------------------*/
 
+.icon-proj {
+    width: 55px;
+    height: auto;
+    filter: drop-shadow(1px 1px 1px #cecece);
+}
+
 .cat-preview {
     width: 70vw;
 }
@@ -166,6 +181,22 @@ a:hover, h4:hover {
 .carousel-item > .theme-preview {
     width: 80vw;
     height: auto;
+}
+
+.todo-preview img {
+    width: 60vw;
+    max-width: 300px;
+    transition: .2s ease;
+}
+
+.todo-preview-large img {
+    width: 200px;
+    transition: .3s ease;
+}
+
+.todo-preview-large {
+    width: 100%;
+    display: none;
 }
 
 ::selection {
@@ -284,6 +315,21 @@ a:hover, h4:hover {
         width: 45vw;
     }
 
+    .todo-preview {
+        display: none;
+    }
+
+    .todo-preview img {
+        width: 350px;
+    }
+
+    .todo-preview-large {
+        display: inline-block;
+    }
+
+    .todo-preview-large img {
+        width: 17vw;
+    }
 
     /* about me
     ------------------------------------------------------------------*/
