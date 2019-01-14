@@ -36,8 +36,16 @@ a:hover {
     color: #d56a46;
 }
 
-/*a:visited {*/
-    /*color: seagreen;*/
+/*.bookmark {*/
+    /*position: absolute;*/
+    /*top: -25px;*/
+    /*right: 30px;*/
+    /*color: ghostwhite;*/
+    /*transition: .5s ease;*/
+/*}*/
+
+/*.bookmark:hover {*/
+    /*top: -8px;*/
 /*}*/
 
 .emphasize {
@@ -178,6 +186,10 @@ div.welcome {
 
 /* navbar
 ----------------------------------------------------------------------*/
+
+nav .dropdown-menu {
+    font-size: 12px;
+}
 
 .navbar {
     background-color: floralwhite;
