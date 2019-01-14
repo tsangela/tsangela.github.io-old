@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+    <meta name="description" content="Angela Tsang's website.">
+    <meta name="author" content="Angela Tsang / tsangela">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="css/home.css">
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=VT323|Roboto+Condensed' rel='stylesheet'>
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png">
+
+    <title>Angela Tsang | Home</title>
+
+</head>
+
+<body>
+
+<div id="landing">
+    <div id="carousel-background" class="carousel slide carousel-fade" data-ride="carousel" data-pause="false" data-interval="10000">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/bg/Yosemite.jpg">
+            </div>
+            <div class="carousel-item">
+                <img src="images/bg/Desert.jpg">
+            </div>
+            <div class="carousel-item">
+                <img src="images/bg/Beach.jpg">
+            </div>
+        </div>
+    </div>
+
+    <div class="left-side">
+        <div class="animated fadeInDown welcome">
+            <span class="welcome-title">Hello, World!</span>
+            <div class="welcome-description">
+                <div class="welcome-subtitle"><h4>by angela tsang</h4></div>
+                <div class="space"></div>
+                <p>Here, you will be able to get to <a href="#about" class="emphasize">know me</a> a little better,
+                    as well as check out some of the <a href="#projects" class="emphasize">tech-y stuff</a> I've been
+                    working on lately.</p>
+                <p><span class="emphasize">Enjoy your stay!</span></p>
+            </div>
+        </div>
+
+        <div class="space"></div><div class="space"></div>
+        <div class="animated fadeIn slow nav">
+            <div class="row">
+                <div class="col">
+                    <div class="row">
+                        <a href="#about">
+                            <i class="fas fa-user-astronaut fa-2x icon" onmouseover="showDesc('about-desc')" onmouseout="hideDesc('about-desc')"></i>
+                        </a>
+                    </div>
+                    <div class="row desc" id="about-desc" style="padding-left: 8px;">about</div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <a href="#" data-toggle="modal" data-target="#updateModal">
+                            <i class="fas fa-list-ol fa-2x icon" onmouseover="showDesc('updates-desc')" onmouseout="hideDesc('updates-desc')"></i>
+                        </a>
+                    </div>
+                    <div class="row desc" id="updates-desc">updates</div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <a href="#projects" style="margin-right: 5px">
+                            <i class="fas fa-laptop-code fa-2x icon" onmouseover="showDesc('projects-desc')" onmouseout="hideDesc('projects-desc')"></i>
+                        </a>
+                    </div>
+                    <div class="row desc" id="projects-desc">projects</div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <a href="#contact">
+                            <i class="far fa-envelope fa-2x icon" onmouseover="showDesc('contact-desc')" onmouseout="hideDesc('contact-desc')"></i>
+                        </a>
+                    </div>
+                    <div class="row desc" id="contact-desc">contact</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<nav class="navbar sticky-top navbar-expand-sm navbar-light">
+    <!--<a class="navbar-brand" href="#landing">Angela Tsang</a>-->
+
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+            data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+            aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#landing">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Projects
+                </a>
+                <div id="dropdown-projects" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#hungrycat">Hungry Cat</a>
+                    <div class="dropdown-divider"></div>
+                    <!--<a class="dropdown-item" href="#mywebsite">Angela Tsang's Website</a>-->
+                    <!--<div class="dropdown-divider"></div>-->
+                    <a class="dropdown-item" href="#mythemes">Website Themes</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#to-do-list">Prioritized To-Do List</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#projects">See all</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+<div id="projects">
+    <!--<img id="img-projects" src="images/light.png" alt="">-->
+    <div class="section">
+        <h1><i class="fas fa-laptop-code"></i> projects</h1>
+
+        <br>
+
+        <div id="hungrycat">
+            <h2><span class="emphasize">hungry cat</span></h2>
+            <h5><span class="languages">{java}</span></h5>
+            <!--<img class="icon-proj" src="images/hungrycat/cat.png"/>-->
+            <p>A simple snake-like game featuring a very hungry cat. You play as the cat! Use the arrow keys
+                to move around,
+                but avoid hitting walls. Different foods have different nutritional values. The more food you eat, the
+                faster you run!
+                During gameplay, press the space bar to pause the game.
+                <a data-toggle="collapse" href="#collapseHungryDetail" role="button" aria-expanded="false"
+                   aria-controls="collapseHungryDetail">
+                    See more...
+                </a>
+            </p>
+
+            <div class="collapse" id="collapseHungryDetail">
+                <ul>
+                    <li>Utilized JFrame and JPanel to produce double-buffered application window</li>
+                    <li>Implemented game states to distinguish game progress</li>
+                    <li>Implemented separate render classes to increase cohesion</li>
+                    <li>Created a discrete probability distribution corresponding to different food types</li>
+                    <li>Performed unit testing with JUnit</li>
+                </ul>
+            </div>
+
+            <a href="https://github.com/tsangela/HungryCat" target="_blank">
+                <button type="button" class="btn btn-warning btn-md">Code</button>
+            </a>
+            <button type="button" class="btn btn-info btn-md disabled" disabled>Play</button>
+            <a data-toggle="collapse" href="#collapseHungryCredits" role="button" aria-expanded="false" aria-controls="collapseHungryCredits">
+                <button data-toggle="collapse" type="button" class="btn btn-secondary btn-md">Credits</button>
+            </a>
+
+            <div class="collapse" id="collapseHungryCredits">
+                <br>
+                <h6>credits</h6>
+                <div class="credits">
+                    <div class="row">
+                        <div class="col-1"><b>Art,</b></div>
+                        <div class="col">"[LPC] Cats and Dogs" by bluecarrot16 of OpenGameArt.org</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1"></div>
+                        <div class="col">"Food Icons" by BizmasterStudios of OpenGameArt.org</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1"><b>SFX,</b></div>
+                        <div class="col">"Cat, Screaming, A.wav" by InspectorJ of Freesound.org</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1"></div>
+                        <div class="col">"Pop sound" by deraj of Freesound.org</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1"><b>BGM,</b></div>
+                        <div class="col">"Level 0" by Monplaisir</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1"></div>
+                        <div class="col">"Level 3" by Monplaisir</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1"></div>
+                        <div class="col">"At Rest" by Kevin MacLeod</div>
+                    </div>
+                </div>
+            </div>
+
+            <br><br>
+
+            <div id="hungrycatpreview" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#hungrycatpreview" data-slide-to="0" class="active"></li>
+                    <li data-target="#hungrycatpreview" data-slide-to="1"></li>
+                    <li data-target="#hungrycatpreview" data-slide-to="2"></li>
+                    <li data-target="#hungrycatpreview" data-slide-to="3"></li>
+                    <li data-target="#hungrycatpreview" data-slide-to="4"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="cat-preview" src="images/hungrycat/hungry-cat-title.png"
+                             alt="hungry-cat-title.png">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="cat-preview" src="images/hungrycat/hungry-cat-main.png"
+                             alt="hungry-cat-main.png">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="cat-preview" src="images/hungrycat/hungry-cat-paused.png"
+                             alt="hungry-cat-paused.png">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="cat-preview" src="images/hungrycat/hungry-cat-intense.png"
+                             alt="hungry-cat-intense.png">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="cat-preview" src="images/hungrycat/hungry-cat-game-over.png"
+                             alt="hungry-cat-game-over.png">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#hungrycatpreview" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#hungrycatpreview" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+        <br>
+        <div class="hr-break">
+            <i class="fab fa-pagelines fa-2x"></i>
+            <i class="fab fa-pagelines fa-2x"></i>
+            <i class="fab fa-pagelines fa-2x"></i>
+        </div>
+        <br>
+
+        <!--<div id="mywebsite">-->
+            <!--<h2><span class="emphasize">angela tsang's website</span></h2>-->
+            <!--<h5><span class="languages">{html|css|javascript}</span></h5>-->
+        <!--<p>A flexible and responsive personal website hosted on GitHub pages to showcase-->
+                <!--my skills and projects. A blend of original code and some Bootstrap components-->
+                <!--&lt;!&ndash;<strike>and a pool of blood, sweat, and tears</strike>&ndash;&gt;-->
+                <!--brings you the page you surfing right this instant!-->
+                <!--<a data-toggle="collapse" href="#collapseWebsiteDetail" role="button" aria-expanded="false"-->
+                   <!--aria-controls="collapseWebsiteDetail">-->
+                    <!--See more...-->
+                <!--</a>-->
+            <!--</p>-->
+
+            <!--<div class="collapse" id="collapseWebsiteDetail">-->
+                <!--<ul>-->
+                    <!--<li>Utilized Twitter Bootstrap framework</li>-->
+                    <!--<li>Flexible and responsive</li>-->
+                    <!--<li>Original layout</li>-->
+                <!--</ul>-->
+            <!--</div>-->
+
+            <!--<a href="https://github.com/tsangela/tsangela.github.io" target="_blank">-->
+                <!--<button type="button" class="btn btn-danger btn-md">Code</button>-->
+            <!--</a>-->
+        <!--</div>-->
+
+        <!--<br>-->
+        <!--<div class="hr-break">-->
+            <!--<i class="fab fa-pagelines fa-2x"></i>-->
+            <!--<i class="fab fa-pagelines fa-2x"></i>-->
+            <!--<i class="fab fa-pagelines fa-2x"></i>-->
+        <!--</div>-->
+        <!--<br>-->
+
+        <div id="mythemes">
+            <h2><span class="emphasize">website themes</span></h2>
+            <h5><span class="languages">{html|css|javascript}</span></h5>
+            <p>A building collection of completely custom website themes of various designs. Designs
+                for personal blogs, professional portfolios, and more!
+                <a data-toggle="collapse" href="#collapseThemesDetail" role="button" aria-expanded="false"
+                   aria-controls="collapseThemesDetail">
+                    See more...
+                </a>
+            </p>
+            <div class="collapse" id="collapseThemesDetail">
+                <ul>
+                    <li>Original code and designs without use of frameworks or ready-made templates</li>
+                    <li>Flexible and responsive</li>
+                </ul>
+            </div>
+
+            <div class="theme-tabs">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a data-toggle="tab" class="nav-link active" href="#rooftop">Rooftop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a data-toggle="tab" class="nav-link" href="#blanc">Blanc</a>
+                    </li>
+                    <li class="nav-item">
+                        <a data-toggle="tab" class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                </ul>
+
+                <br>
+
+                <div class="tab-content">
+
+                    <div id="rooftop" class="tab-pane fade show active">
+                        <h4>#1 - Rooftop</h4>
+                        <!--Preview-->
+                        <div id="carouselRooftop" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="theme-preview" src="images/themes/rooftop/rooftop-1.png" alt="Rooftop-1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="theme-preview" src="images/themes/rooftop/rooftop-2.png" alt="Rooftop-2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="theme-preview" src="images/themes/rooftop/rooftop-3.png" alt="Rooftop-3">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="theme-preview" src="images/themes/rooftop/rooftop-4.png" alt="Rooftop-4">
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <p>A casual theme for casual bloggers featuring tasteful digital art.</p>
+                        <div>
+                            <a href="https://github.com/tsangela/rooftop" target="_blank">
+                                <button type="button" class="btn btn-warning btn-md">Code</button>
+                            </a>
+                            <a href="https://tsangela.github.io/rooftop/" target="_blank">
+                                <button type="button" class="btn btn-info btn-md">Demo</button>
+                            </a>
+                            <a data-toggle="collapse" href="#collapseRooftopCredits" role="button" aria-expanded="false" aria-controls="collapseRooftopCredits">
+                                <button data-toggle="collapse" type="button" class="btn btn-secondary btn-md">Credits</button>
+                            </a>
+                        </div>
+                        <br>
+                        <div class="collapse"  id="collapseRooftopCredits">
+                            <div class="credits">
+                                <h6>credits</h6>
+                                <div class="row">
+                                    <div class="col-2"><b>Background,</b></div>
+                                    <div class="col">「こっちにおいでよ」 by <a href="http://lipcream.chu.jp/" target="_blank">中村ひなた</a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-2"><b>Posts,</b></div>
+                                    <div class="col">「昼下がり」 by <a href="http://lipcream.chu.jp/" target="_blank">中村ひなた</a></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-2"></div>
+                                    <div class="col">「美しい日本の風景」 by <a href="http://mizuasato.com/" target="_blank">水あさと</a></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-2"></div>
+                                    <div class="col">「こっちにおいでよ」 by <a href="http://lipcream.chu.jp/" target="_blank">中村ひなた</a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-2"></div>
+                                    <div class="col">「GARDEN」 by <a href="http://haruco67.tumblr.com/" target="_blank">はるこ</a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-2"></div>
+                                    <div class="col">「星の海をあるいた」 by <a href="http://haruco67.tumblr.com/" target="_blank">はるこ</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="blanc" class="tab-pane fade">
+                        <h4>#2 - Blanc</h4>
+                        <!--Preview-->
+                        <div id="carouselBlanc" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="theme-preview" src="images/themes/blanc/blanc-1.png" alt="Blanc-1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="theme-preview" src="images/themes/blanc/blanc-2.png" alt="Blanc-2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="theme-preview" src="images/themes/blanc/blanc-3.png" alt="Blanc-3">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="theme-preview" src="images/themes/blanc/blanc-4.png" alt="Blanc-4">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="theme-preview" src="images/themes/blanc/blanc-5.png" alt="Blanc-5">
+                                </div>
+                            </div>
+                        </div>
+                        <!--Description-->
+                        <br>
+                        <p>A simple theme for minimalistic people.</p>
+                        <div>
+                            <a href="https://github.com/tsangela/blanc/" target="_blank">
+                                <button type="button" class="btn btn-warning btn-md">Code</button>
+                            </a>
+                            <a href="https://tsangela.github.io/blanc/" target="_blank">
+                                <button type="button" class="btn btn-info btn-md">Demo</button>
+                            </a>
+                            <a data-toggle="collapse" href="#collapseBlancCredits" role="button" aria-expanded="false" aria-controls="collapseBlancCredits">
+                                <button data-toggle="collapse" type="button" class="btn btn-secondary btn-md">Credits</button>
+                            </a>
+                        </div>
+                        <br>
+                        <div class="collapse" id="collapseBlancCredits">
+                            <div class="credits">
+                                <h6>credits</h6>
+                                <div class="row">
+                                    <div class="col-2"><b>Photos,</b></div>
+                                    <div class="col">me!</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="portfolio" class="tab-pane fade">
+                        <h4>#3 - Portfolio</h4>
+                        <!--Preview-->
+                        <div id="carouselPortfolio" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="theme-preview" src="images/themes/portfolio/portfolio-1.png" alt="Portfolio-1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="theme-preview" src="images/themes/portfolio/portfolio-2.png" alt="Portfolio-2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="theme-preview" src="images/themes/portfolio/portfolio-3.png" alt="Portfolio-3">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="theme-preview" src="images/themes/portfolio/portfolio-4.png" alt="Portfolio-4">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="theme-preview" src="images/themes/portfolio/portfolio-5.png" alt="Portfolio-5">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="theme-preview" src="images/themes/portfolio/portfolio-6.png" alt="Portfolio-6">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="theme-preview" src="images/themes/portfolio/portfolio-7.png" alt="Portfolio-7">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="theme-preview" src="images/themes/portfolio/portfolio-8.png" alt="Portfolio-8">
+                                </div>
+                            </div>
+                        </div>
+                        <!--Description-->
+                        <br>
+                        <p>A more professional theme where one can showcase one's work.</p>
+                        <div>
+                            <a href="https://github.com/tsangela/portfolio/" target="_blank">
+                                <button type="button" class="btn btn-warning btn-md">Code</button>
+                            </a>
+                            <a href="https://tsangela.github.io/portfolio/" target="_blank">
+                                <button type="button" class="btn btn-info btn-md">Demo</button>
+                            </a>
+                            <a data-toggle="collapse" href="#collapsePortfolioCredits" role="button" aria-expanded="false" aria-controls="collapsePortfolioCredits">
+                                <button data-toggle="collapse" type="button" class="btn btn-secondary btn-md">Credits</button>
+                            </a>
+                        </div>
+                        <br>
+                        <div class="collapse" id="collapsePortfolioCredits">
+                            <div class="credits">
+                                <h6>credits</h6>
+                                <div class="row">
+                                    <div class="col-4"><b>Background,</b></div>
+                                    <div class="col">by <a href="https://pixabay.com/en/users/Free-Photos-242387/">Free-Photos</a> on Pixabay</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4"><b>Placeholder project images,</b></div>
+                                    <div class="col">by <a href="https://pixabay.com/en/users/raphaelsilva-4702998/">raphaelsilva</a> on Pixabay</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4"><b>Email icon,</b></div>
+                                    <div class="col">by <a href="https://pixabay.com/en/users/Deans_Icons-2620543/">Deans_Icons</a> on Pixabay</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <div class="hr-break">
+            <i class="fab fa-pagelines fa-2x"></i>
+            <i class="fab fa-pagelines fa-2x"></i>
+            <i class="fab fa-pagelines fa-2x"></i>
+        </div>
+        <br>
+
+        <div id="to-do-list">
+            <h2><span class="emphasize">prioritized to-do list</span></h2>
+            <h5><span class="languages">{xml|java}</span></h5>
+
+            <p>A simple task management Android application. Keep track of your everyday tasks and set priority
+                levels to highlight the important ones. Completed tasks can be checked off to be removed from the list.
+                <a data-toggle="collapse" href="#collapseToDoDetail" role="button" aria-expanded="false"
+                   aria-controls="collapseToDoDetail">
+                    See more...
+                </a>
+            </p>
+
+            <div class="collapse" id="collapseToDoDetail">
+                <ul>
+                    <li>Created on Android Studio</li>
+                    <li>Implemented priority feature to distinguish items of importance</li>
+                    <li>Easy and straightforward to use</li>
+                    <li>Minimalistic layout</li>
+                </ul>
+            </div>
+
+            <a href="https://github.com/tsangela/PrioritizedToDoList" target="_blank">
+                <button type="button" class="btn btn-warning btn-md">Code</button>
+            </a>
+            <a href="https://github.com/tsangela/PrioritizedToDoList/raw/master/app-release.apk">
+                <button type="button" class="btn btn-info btn-md">Download</button>
+            </a>
+
+            <br><br>
+
+            <ul class="todo-preview snap-container">
+                <li><img src="images/todo/todo-1.png" alt="todo-1"></li>
+                <li><img src="images/todo/todo-2.png" alt="todo-2"></li>
+                <li><img src="images/todo/todo-3.png" alt="todo-3"></li>
+                <li><img src="images/todo/todo-4.png" alt="todo-4"></li>
+                <li><img src="images/todo/todo-5.png" alt="todo-5"></li>
+            </ul>
+
+        </div>
+
+    </div>
+</div>
+
+<div id="about">
+    <div class="section">
+        <h1><i class="fas fa-user-astronaut"></i> about me</h1>
+        <!--<h2><span class="emphasize">angela tsang</span></h2>-->
+        <div class="row about-card-sm">
+            <div class="col-md-6" align="center">
+                <img class="me" src="images/self.png" alt="Me!">
+            </div>
+            <div class="col">
+                <br>
+                <p>My name is <span class="emphasize">Angela Tsang</span> and I am a third year B.Sc. Computer Science
+                    student at the beautiful University of British Columbia, home of the Thunderbirds. Here, you will
+                    find some <span class="emphasize">small projects</span> I have been working on. In my free time, I can be found taking strolls with
+                    my dogs, playing music with friends, and fiddling with new programming languages.
+                </p>
+            </div>
+        </div>
+
+        <div class="media about-card-lg">
+            <img class="me" src="images/self.png" alt="Me!">
+            <div class="media-body">
+                <p style="margin-left: 20px;">My name is <span class="emphasize">Angela Tsang</span> and I am a third year B.Sc. Computer Science
+                    student at the beautiful University of British Columbia, home of the Thunderbirds. Here, you will
+                    find some small projects I have been working on. In my free time, I can be found taking strolls with
+                    my dogs, playing music with friends, and fiddling with new programming languages.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="contact">
+    <div class="section">
+        <h1><i class="fas fa-envelope"></i> contact me</h1>
+        <a href="https://github.com/tsangela/" target="_blank">
+            <i class="fab fa-github-square fa-4x"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/tsangela" target="_blank">
+            <i class="fab fa-linkedin fa-4x"></i>
+        </a>
+        <a href="mailto:angela.tsang@alumni.ubc.ca">
+            <i class="fas fa-envelope-square fa-4x"></i>
+        </a>
+    </div>
+    <br><br>
+</div>
+
+<!-- Update Modal -->
+<div class="modal fade" id="updateModal" tabindex="-1" role="dialog" aria-labelledby="updateModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="updateModalTitle">Updates</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item push-right">&#9758; 05.31.18 - <a href="#hungrycat">Hungry Cat</a></li>
+                    <li class="list-group-item push-right">&#9758; 08.08.18 - <a href="#mythemes">Website Themes</a></li>
+                    <li class="list-group-item push-right">&#9758; 08.08.18 - <a href="#mythemes">Rooftop</a></li>
+                    <li class="list-group-item push-right">&#9758; 08.09.18 - <a href="#mythemes">Blanc</a></li>
+                    <li class="list-group-item push-right">&#9758; 08.29.18 - <a href="#mythemes">Portfolio</a></li>
+                    <li class="list-group-item push-right">&#9758; 09.08.18 - <a href="#to-do-list">To-Do List App</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>-->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
