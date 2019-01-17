@@ -9,6 +9,10 @@ $(document).click(function (event) {
     }
 });
 
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+});
+
 function showDesc(id) {
     document.getElementById(id).style.display = 'block';
 }
