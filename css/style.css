@@ -51,8 +51,11 @@ a:hover {
 /*}*/
 
 .emphasize {
-    -webkit-transition: .3s ease-in-out;
-    transition: .3s ease;
+    -webkit-transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    -ms-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
 }
 
 .emphasize:hover {
@@ -88,8 +91,11 @@ a:hover {
 }
 
 .push-right {
-    -webkit-transition: .3s ease-in-out;
-    transition: .3s ease;
+    -webkit-transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    -ms-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
 }
 
 .push-right:hover {
@@ -131,8 +137,11 @@ span.welcome-title {
     color: ghostwhite;
     font-size: 65px;
     max-font-size: 100px;
-    -webkit-transition: .3s ease-in-out;
-    transition: .3s ease;
+    -webkit-transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    -ms-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
     /*border-radius: 10px;*/
 }
 
@@ -171,12 +180,13 @@ span.welcome-title {
 }
 
 .nav i {
-    -webkit-transition: .3s ease-in-out;
-    transition: .3s ease;
     color: ghostwhite;
-    margin-top: 7px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 10px 10px 0 10px;
+    -webkit-transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    -ms-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
 }
 
 .nav i:hover {
@@ -199,7 +209,11 @@ nav .dropdown-menu {
 .navbar {
     background-color: floralwhite;
     opacity: 0.85;
-    transition: .5s ease;
+    -webkit-transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    -ms-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
     /*font-family: 'VT323', monospace;*/
 }
 
@@ -246,11 +260,11 @@ div.section {
     text-align: center;
     margin: 15px 0;
     color: seagreen;
-    -webkit-transition: .3s ease;
-    -moz-transition: .3s ease;
-    -ms-transition: .3s ease;
-    -o-transition: .3s ease;
-    transition: .5s ease;
+    -webkit-transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    -ms-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
 }
 
 .hr-break:hover {
@@ -393,8 +407,11 @@ div.section {
     padding-bottom: 3px;
     margin-right: 5px;
     border-bottom: transparent dotted 5px;
-    -webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;
+    -webkit-transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    -ms-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
 }
 
 #contact a > i:hover {
