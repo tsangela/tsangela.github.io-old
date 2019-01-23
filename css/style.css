@@ -15,7 +15,7 @@ body {
 }
 
 /*::selection {*/
-    /*background: navajowhite;*/
+    /*background: powderblue;*/
 /*}*/
 
 /*::-moz-selection {*/
@@ -127,13 +127,13 @@ div.welcome {
     width: 88vw;
 }
 
-.welcome-title {
+span.welcome-title {
     background-color: #68E6CA; /*#E97A7A*/
     font-family: Didot, serif;
     padding: 0 5px;
     color: ghostwhite;
     font-size: 65px;
-    /*font-size: 10vw;*/
+    max-font-size: 100px;
     -webkit-transition: .3s ease-in-out;
     transition: .3s ease;
     /*border-radius: 10px;*/
@@ -201,12 +201,13 @@ nav .dropdown-menu {
 
 .navbar {
     background-color: floralwhite;
-    /*opacity: 0.9;*/
+    opacity: 0.85;
+    transition: .5s ease;
     /*font-family: 'VT323', monospace;*/
 }
 
-.navbar-brand:hover {
-    font-weight: bold;
+.navbar:hover {
+    opacity: 1;
 }
 
 .navbar #dropdown-projects {
@@ -229,9 +230,7 @@ h1, h2, h3, h4 {
 }
 
 div.section {
-    /*background: floralwhite;*/
     padding: 0 15px 5px 15px;
-    /*background: rgba(255, 250, 240, 0.8);*/
 }
 
 /* projects
@@ -298,10 +297,14 @@ div.section {
 #mythemes .carousel, .carousel-item > .theme-preview {
     width: 100%;
     height: auto;
+}
+
+#mythemes .carousel-item > .theme-preview {
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
 }
+
 .todo-preview {
     background: whitesmoke;
     /*background: linear-gradient(to bottom right, mistyrose, azure);*/
@@ -348,6 +351,10 @@ div.section {
     margin-bottom: 5px;
 }
 
+.credits li {
+    font-size: 8px;
+}
+
 /* about
 ----------------------------------------------------------------------*/
 
@@ -364,22 +371,11 @@ div.section {
     color: white;
 }
 
-#about img {
-    /*-webkit-transition: .3s ease-in-out;*/
-    /*transition: .3s ease;*/
-}
-
-#about img:hover {
-    opacity: 0.7;
-}
-
-/*.about-card-lg {*/
-    /*display: none;*/
-    /*max-width: 550px;*/
-/*}*/
-
 .me {
     padding-top: 15px;
+}
+
+.me img {
     width: 40vw;
     max-width: 200px;
     height: auto;
@@ -388,31 +384,31 @@ div.section {
     border-radius: 100%;
 }
 
+.me img:hover {
+    opacity: 0.7;
+}
+
 /* contact
 ----------------------------------------------------------------------*/
 
-/*#contact .contact-btns {*/
-    /*display: -webkit-flex;*/
-    /*display: flex;*/
-    /*justify-content: center;*/
-    /*background-color: #fceeb5;*/
-/*}*/
-
 #contact a > i {
     color: #68E6CA;
-    /*padding-right: 5px;*/
     margin-right: 5px;
     -webkit-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
 }
 
 #contact a > i:hover {
-    font-size: 4.5em;
+    /*font-size: 4.5em;*/
 }
 
 /* for tablets:
 ----------------------------------------------------------------------*/
 @media only screen and (min-width: 600px) {
+
+    span.welcome-title {
+        font-size: 80px;
+    }
 
     /* projects
     ------------------------------------------------------------------*/
@@ -432,10 +428,6 @@ div.section {
 ----------------------------------------------------------------------*/
 @media only screen and (min-width: 768px) {
 
-    .welcome {
-        /*font-size: 90px;*/
-    }
-
     div.container-link .btn {
         font-size: 25px;
     }
@@ -444,7 +436,6 @@ div.section {
     ------------------------------------------------------------------*/
 
     .hr-break {
-        /*text-align: unset;*/
         display: none;
     }
 
@@ -478,7 +469,6 @@ div.section {
 
     #hungrycatpreview {
         width: 50%;
-        /*max-width: 400px;*/
     }
 
     #mythemes .carousel, .carousel-item > .theme-preview, .theme-tabs > .nav-tabs, .tab-content p {
@@ -486,28 +476,13 @@ div.section {
         width: 45vw;
     }
 
-    /*.todo-preview {*/
-        /*align-self: flex-start;*/
-    /*}*/
-
-}
-
-@media only screen and (min-width: 920px) {
-
-    /*div.project-desc, .todo-preview {*/
-        /*width: 60%;*/
-    /*}*/
-
-    /* about
-    ------------------------------------------------------------------*/
-
-    /*#about {*/
-        /*background: url("../images/bg/coffee.png") no-repeat 650px center;*/
-        /*background-size: 220px;*/
-    /*}*/
 }
 
 @media only screen and (min-width: 1000px) {
+    /*div.column {*/
+        /*width: 50%;*/
+    /*}*/
+
     #hungrycat {
         background-size: 360px;
     }
