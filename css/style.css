@@ -240,6 +240,21 @@ h1, h2, h3, h4 {
     font-family: Didot, serif;
 }
 
+.header-link a {
+    opacity: 0;
+    color: peachpuff;
+    -webkit-transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    -ms-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+}
+
+.header-link a:hover {
+    opacity: 1;
+    color: peachpuff;
+}
+
 div.section {
     padding: 0 15px 5px 15px;
 }
