@@ -332,7 +332,8 @@ div.section {
 }
 
 .todo-preview {
-    background: whitesmoke;
+    /*background: whitesmoke;*/
+    border: peachpuff solid 2px;
     /*background: linear-gradient(to bottom right, mistyrose, azure);*/
     /*background: linear-gradient(to bottom right, lavenderblush, lavender);*/
 
