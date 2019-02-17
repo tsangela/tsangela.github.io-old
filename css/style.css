@@ -333,7 +333,7 @@ div.section {
 
 .todo-preview {
     /*background: whitesmoke;*/
-    border: peachpuff solid 2px;
+    border: lavenderblush solid 2px;
     /*background: linear-gradient(to bottom right, mistyrose, azure);*/
     /*background: linear-gradient(to bottom right, lavenderblush, lavender);*/
 
@@ -369,6 +369,19 @@ div.section {
 .todo-preview img {
     width: 250px;
     padding: 15px;
+}
+
+.connect-four-preview {
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.iframe-container {
+    display: none;
 }
 
 .credits {
@@ -454,6 +467,18 @@ div.section {
         scroll-snap-align: none;
     }
 
+    .iframe-container {
+        margin-top: 10px;
+        display: block;
+    }
+
+    #connect-four-iframe {
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        height: 530px;
+    }
+
 }
 
 /* for desktop:
@@ -471,8 +496,9 @@ div.section {
         display: none;
     }
 
-    div.project-desc, .todo-preview {
+    div.project-desc, .todo-preview, .connect-four-preview {
         width: 50%;
+        height: auto;
     }
 
     .justify-center {
@@ -501,6 +527,11 @@ div.section {
 
     #hungrycatpreview {
         width: 50%;
+    }
+
+    #connect-four {
+        background: url("../images/bg/console-2.png") no-repeat right top;
+        background-size: 330px;
     }
 
     #mythemes .carousel, .carousel-item > .theme-preview, .theme-tabs > .nav-tabs, .tab-content p {

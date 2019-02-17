@@ -217,23 +217,23 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="cat-preview" src="images/hungrycat/hungry-cat-title.png"
+                            <img class="cat-preview" src="images/hungry-cat/hungry-cat-title.png"
                                  alt="hungry-cat-title.png">
                         </div>
                         <div class="carousel-item">
-                            <img class="cat-preview" src="images/hungrycat/hungry-cat-main.png"
+                            <img class="cat-preview" src="images/hungry-cat/hungry-cat-main.png"
                                  alt="hungry-cat-main.png">
                         </div>
                         <div class="carousel-item">
-                            <img class="cat-preview" src="images/hungrycat/hungry-cat-paused.png"
+                            <img class="cat-preview" src="images/hungry-cat/hungry-cat-paused.png"
                                  alt="hungry-cat-paused.png">
                         </div>
                         <div class="carousel-item">
-                            <img class="cat-preview" src="images/hungrycat/hungry-cat-intense.png"
+                            <img class="cat-preview" src="images/hungry-cat/hungry-cat-intense.png"
                                  alt="hungry-cat-intense.png">
                         </div>
                         <div class="carousel-item">
-                            <img class="cat-preview" src="images/hungrycat/hungry-cat-game-over.png"
+                            <img class="cat-preview" src="images/hungry-cat/hungry-cat-game-over.png"
                                  alt="hungry-cat-game-over.png">
                         </div>
                     </div>
@@ -561,6 +561,44 @@
             </div>
         </div>
 
+        <div id="connect-four">
+            <h2><span class="emphasize">connect four <i class="fas fa-gamepad"></i></span></h2>
+            <h5><span class="languages">{react|css|javascript}</span></h5>
+
+            <div class="container-gradient project-desc">
+                The classic childhood game brought to the web! First player to place four chips in a line wins.
+                <a data-toggle="collapse" href="#collapseConnectFourDetail" role="button" aria-expanded="false"
+                   aria-controls="collapseConnectFourDetail">
+                    See more...
+                </a>
+                <div class="collapse" id="collapseConnectFourDetail">
+                    <hr>
+                    <ul>
+                        <li>Tracks position of mouse to preview drop column</li>
+                        <li>Keeps track of next player to move</li>
+                        <li>Dynamically calculates all possible winning patterns</li>
+                        <li>Minimalistic layout</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project-btns justify-center">
+                <a href="https://github.com/tsangela/connect-four" target="_blank">
+                    <button type="button" class="btn btn-warning btn-md">Code</button>
+                </a>
+                <a href="https://tsangela.github.io/connect-four/" target="_blank">
+                    <button type="button" class="btn btn-info btn-md">Play</button>
+                </a>
+                <a href="#" data-toggle="modal" data-target="#connectFourModal">
+                    <button type="button" class="btn btn-danger btn-md">Pop-up</button>
+                </a>
+            </div>
+
+            <div class="justify-center">
+                <img src="images/connect-four/connect-four-0.png" alt="connect-four-0" class="connect-four-preview">
+            </div>
+        </div>
+
     </div>
 </div>
 
@@ -617,6 +655,7 @@
             </div>
             <div class="modal-body">
                 <ul class="list-group list-group-flush">
+                    <li class="list-group-item push-right">&#9758; 02.16.19 - <a href="#connect-four">Connect Four</a></li>
                     <li class="list-group-item push-right">&#9758; 01.12.19 - <a href="">New site layout!</a></li>
                     <li class="list-group-item push-right">&#9758; 09.08.18 - <a href="#to-do-list">To-Do List App</a></li>
                     <li class="list-group-item push-right">&#9758; 08.29.18 - <a href="#mythemes">Portfolio</a></li>
@@ -626,6 +665,27 @@
                     <li class="list-group-item push-right">&#9758; 05.31.18 - <a href="#hungrycat">Hungry Cat</a></li>
                 </ul>
             </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="connectFourModal" tabindex="-1" role="dialog" aria-labelledby="connectFourModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <!--<div class="modal-header">-->
+                <!--<h5 class="modal-title" id="connectFourModalTitle">Play now!</h5>-->
+                <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+                    <!--<span aria-hidden="true">&times;</span>-->
+                <!--</button>-->
+            <!--</div>-->
+            <iframe name="connect-four-iframe"
+                    id="connect-four-iframe"
+                    frameborder="0"
+                    align="middle"
+                    scrolling="no"
+                    src="https://tsangela.github.io/connect-four/">
+                <p>Your browser does not support iframes. :-(</p>
+            </iframe>
         </div>
     </div>
 </div>
