@@ -380,8 +380,11 @@ div.section {
     border-radius: 10px;
 }
 
-.iframe-container {
-    display: none;
+#connect-four-iframe {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    height: 530px;
 }
 
 .credits {
@@ -466,19 +469,6 @@ div.section {
     .todo-preview li {
         scroll-snap-align: none;
     }
-
-    .iframe-container {
-        margin-top: 10px;
-        display: block;
-    }
-
-    #connect-four-iframe {
-        -webkit-border-radius: 10px;
-        -moz-border-radius: 10px;
-        border-radius: 10px;
-        height: 530px;
-    }
-
 }
 
 /* for desktop:
