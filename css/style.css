@@ -221,6 +221,20 @@ nav .dropdown-menu {
     opacity: 1;
 }
 
+#projects-dropdown-divider {
+    margin: 0;
+}
+
+.navbar .dropdown-menu {
+    padding: 0;
+}
+
+.navbar .dropdown-item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /*margin: 5px 0;*/
+}
+
 .navbar #dropdown-projects {
     background-color: floralwhite;
 }
