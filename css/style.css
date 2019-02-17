@@ -525,13 +525,13 @@ div.section {
         background-size: 300px;
     }
 
-    #hungrycatpreview {
-        width: 50%;
-    }
-
     #connect-four {
         background: url("../images/bg/console-2.png") no-repeat right top;
         background-size: 330px;
+    }
+
+    #hungrycatpreview {
+        width: 50%;
     }
 
     #mythemes .carousel, .carousel-item > .theme-preview, .theme-tabs > .nav-tabs, .tab-content p {
