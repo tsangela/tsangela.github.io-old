@@ -371,7 +371,7 @@ div.section {
     padding: 15px;
 }
 
-.connect-four-preview {
+.connect-four-preview, .you-decide-preview {
     width: 100%;
     max-width: 400px;
     height: 100%;
@@ -483,7 +483,7 @@ div.section {
         display: none;
     }
 
-    div.project-desc, .todo-preview, .connect-four-preview {
+    div.project-desc, .todo-preview, .connect-four-preview, .you-decide-preview {
         width: 50%;
         height: auto;
     }
@@ -514,6 +514,11 @@ div.section {
 
     #connect-four {
         background: url("../images/bg/console-2.png") no-repeat right top;
+        background-size: 330px;
+    }
+
+    #you-decide {
+        background: url("../images/bg/donut.jpg") no-repeat right top;
         background-size: 330px;
     }
 
