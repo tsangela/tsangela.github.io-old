@@ -172,14 +172,16 @@ span.welcome-title {
 
 .nav .desc {
     /*opacity: 0;*/
-    display: none;
+    /*display: none;*/
+    visibility: hidden;
     color: ghostwhite;
     font-family: 'VT323', monospace;
     padding-left: 5px;
     /*font-size: 12px;*/
 }
 
-.nav i {
+.nav a {
+    padding: 5px 2px;
     color: ghostwhite;
     margin: 10px 10px 0 10px;
     -webkit-transition: .2s ease-in-out;
@@ -189,7 +191,7 @@ span.welcome-title {
     transition: .2s ease-in-out;
 }
 
-.nav i:hover {
+.nav a:hover {
     /*color: #68E6CA;*/
     margin-top: 0;
 }
@@ -512,27 +514,27 @@ div.section {
     }
 
     #hungrycat {
-        background: url("../images/bg/console.png") no-repeat right top;
+        background: url("../images/bg/section/console.png") no-repeat right top;
         background-size: 330px;
     }
 
     #mythemes {
-        background: url("../images/bg/light.png") no-repeat right top;
+        background: url("../images/bg/section/light.png") no-repeat right top;
         background-size: 350px;
     }
 
     #to-do-list {
-        background: url("../images/bg/note-black.jpg") no-repeat right top;
+        background: url("../images/bg/section/note-black.jpg") no-repeat right top;
         background-size: 300px;
     }
 
     #connect-four {
-        background: url("../images/bg/console-2.png") no-repeat right top;
+        background: url("../images/bg/section/console-2.png") no-repeat right top;
         background-size: 330px;
     }
 
     #you-decide {
-        background: url("../images/bg/donut.jpg") no-repeat right top;
+        background: url("../images/bg/section/donut.jpg") no-repeat right top;
         background-size: 330px;
     }
 

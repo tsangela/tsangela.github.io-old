@@ -6,15 +6,18 @@
     <meta name="viewport" content="width-device-width, initial-scale=1">
     <meta name="description" content="Angela Tsang's website.">
     <meta name="author" content="Angela Tsang / tsangela">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
+
     <!-- Google Fonts -->
     <link href='https://fonts.googleapis.com/css?family=VT323|Roboto+Condensed' rel='stylesheet'>
+
     <!-- Favicon -->
-    <link rel="icon" href="images/chimken.png">
+    <link rel="icon" href="images/flower.png">
 
     <title>Angela Tsang</title>
 
@@ -23,16 +26,22 @@
 <body>
 
 <div id="landing">
-    <div id="carousel-background" class="carousel slide carousel-fade" data-ride="carousel" data-pause="false" data-interval="10000">
+    <div id="carousel-background"
+         class="carousel slide carousel-fade"
+         data-ride="carousel"
+         data-pause="false"
+         data-interval="10000"
+         draggable=false
+    >
         <div class="carousel-inner">
+            <div class="carousel-item">
+                <img src="images/bg/blossom-1.jpg" alt="blossom-1">
+            </div>
+            <div class="carousel-item">
+                <img src="images/bg/blossom-2.jpg" alt="blossom-2">
+            </div>
             <div class="carousel-item active">
-                <img src="images/bg/Yosemite.jpg">
-            </div>
-            <div class="carousel-item">
-                <img src="images/bg/Desert.jpg">
-            </div>
-            <div class="carousel-item">
-                <img src="images/bg/Beach.jpg">
+                <img src="images/bg/blossom-0.jpg" alt="blossom-0">
             </div>
         </div>
     </div>
@@ -55,35 +64,46 @@
             <div class="row">
                 <div class="col">
                     <div class="row">
-                        <a href="#about">
-                            <i class="fas fa-user-astronaut fa-2x icon" onmouseover="showDesc('about-desc')" onmouseout="hideDesc('about-desc')"></i>
+                        <a href="#about"
+                           onmouseover="showDesc('about-desc')"
+                           onmouseout="hideDesc('about-desc')">
+                            <i class="fas fa-user-astronaut fa-2x icon"></i>
+                            <span class="row desc" id="about-desc">about me</span>
                         </a>
                     </div>
-                    <div class="row desc" id="about-desc" style="padding-left: 8px;">about</div>
                 </div>
                 <div class="col">
                     <div class="row">
-                        <a href="#" data-toggle="modal" data-target="#updateModal">
-                            <i class="fas fa-list-ol fa-2x icon" onmouseover="showDesc('updates-desc')" onmouseout="hideDesc('updates-desc')"></i>
+                        <a href="#"
+                           data-toggle="modal"
+                           data-target="#updateModal"
+                           onmouseover="showDesc('updates-desc')"
+                           onmouseout="hideDesc('updates-desc')">
+                            <i class="fas fa-list-ol fa-2x icon"></i>
+                            <span class="row desc" id="updates-desc">updates</span>
                         </a>
                     </div>
-                    <div class="row desc" id="updates-desc">updates</div>
                 </div>
                 <div class="col">
                     <div class="row">
-                        <a href="#projects" style="margin-right: 5px">
-                            <i class="fas fa-laptop-code fa-2x icon" onmouseover="showDesc('projects-desc')" onmouseout="hideDesc('projects-desc')"></i>
+                        <a href="#projects"
+                           style="margin-right: 5px"
+                           onmouseover="showDesc('projects-desc')"
+                           onmouseout="hideDesc('projects-desc')">
+                            <i class="fas fa-laptop-code fa-2x icon"></i>
+                            <span class="row desc" id="projects-desc">projects</span>
                         </a>
                     </div>
-                    <div class="row desc" id="projects-desc">projects</div>
                 </div>
                 <div class="col">
                     <div class="row">
-                        <a href="#contact">
-                            <i class="far fa-envelope fa-2x icon" onmouseover="showDesc('contact-desc')" onmouseout="hideDesc('contact-desc')"></i>
+                        <a href="#contact"
+                           onmouseover="showDesc('contact-desc')"
+                           onmouseout="hideDesc('contact-desc')">
+                            <i class="far fa-envelope fa-2x icon"></i>
+                            <span class="row desc" id="contact-desc">contact</span>
                         </a>
                     </div>
-                    <div class="row desc" id="contact-desc">contact</div>
                 </div>
             </div>
         </div>
