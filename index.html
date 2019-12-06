@@ -60,15 +60,16 @@
         </div>
 
         <div class="space"></div><div class="space"></div>
-        <div class="animated fadeIn slow nav">
+        <div id="nav-buttons" class="animated fadeIn slow nav">
             <div class="row">
                 <div class="col">
                     <div class="row">
                         <a href="#about"
+                           style="margin-left: 0"
                            onmouseover="showDesc('about-desc')"
                            onmouseout="hideDesc('about-desc')">
                             <i class="fas fa-user-astronaut fa-2x icon"></i>
-                            <span class="row desc" id="about-desc">about me</span>
+                            <p class="row desc" id="about-desc">about</p>
                         </a>
                     </div>
                 </div>
@@ -128,11 +129,11 @@
                     Projects
                 </a>
                 <div id="dropdown-projects" class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#hungrycat">Hungry Cat</a>
-                    <!--<a class="dropdown-item" href="#mywebsite">Angela Tsang's Website</a>-->
-                    <a class="dropdown-item" href="#mythemes">Website Themes</a>
-                    <a class="dropdown-item" href="#to-do-list">Task Manager</a>
+                    <a class="dropdown-item" href="#you-decide">You Decide</a>
                     <a class="dropdown-item" href="#connect-four">Connect Four</a>
+                    <a class="dropdown-item" href="#hungrycat">Hungry Cat</a>
+                    <a class="dropdown-item" href="#to-do-list">Task Manager</a>
+                    <a class="dropdown-item" href="#mythemes">Website Themes</a>
                     <div id="projects-dropdown-divider" class="dropdown-divider"></div>
                     <a class="dropdown-item" href="#projects" style="font-style: italic;">See all</a>
                 </div>
@@ -150,8 +151,101 @@
 
 <div id="projects" class="container-fluid">
     <div class="section">
-        <h1><i class="fas fa-laptop-code"></i> projects <span class="header-link"><a href="#projects">#</a></span></h1>
+        <h1>
+            <span class="header-section"><i class="fas fa-laptop-code"></i> projects</span>
+            <span class="header-link"><a href="#projects">#</a></span>
+        </h1>
 
+        <br>
+
+        <div id="you-decide">
+            <h2><span class="emphasize">you decide <i class="fas fa-utensils"></i></span></h2>
+            <h5><span class="languages">{react|css|javascript}</span></h5>
+
+            <div class="container-gradient project-desc">
+                Never not know where to eat, drink, etc. again! This web app will retrieve and display
+                options near you and even choose one for you if you so desire.
+                <a data-toggle="collapse" href="#collapseYouDecideDetail" role="button" aria-expanded="false"
+                   aria-controls="collapseYouDecideDetail">
+                    See more...
+                </a>
+                <div class="collapse" id="collapseYouDecideDetail">
+                    <hr>
+                    <ul>
+                        <li>Retrieve places using the Google Places API near the user's geolocation</li>
+                        <li>Dynamically display name and metadata of the retrieved places</li>
+                        <li>Randomly select a place for the indecisive user</li>
+                        <li>Supports finding nearby restaurants, cafes, bakeries, and bars</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project-btns justify-center">
+                <a href="https://github.com/tsangela/you-decide" target="_blank">
+                    <button type="button" class="btn btn-warning btn-md">Code</button>
+                </a>
+                <a href="https://tsangela.github.io/you-decide/" target="_blank">
+                    <button type="button" class="btn btn-info btn-md">Hit me up</button>
+                </a>
+            </div>
+
+            <div class="justify-center">
+                <img src="images/you-decide/modal.png" alt="you-decide-0" class="you-decide-preview">
+            </div>
+        </div>
+
+        <br>
+        <div class="hr-break">
+            <i class="fab fa-pagelines fa-2x"></i>
+            <i class="fab fa-pagelines fa-2x"></i>
+            <i class="fab fa-pagelines fa-2x"></i>
+        </div>
+        <br>
+
+        <div id="connect-four">
+            <h2><span class="emphasize">connect four <i class="fas fa-gamepad"></i></span></h2>
+            <h5><span class="languages">{react|css|javascript}</span></h5>
+
+            <div class="container-gradient project-desc">
+                The classic childhood game brought to the web! First player to place four chips in a line wins.
+                <a data-toggle="collapse" href="#collapseConnectFourDetail" role="button" aria-expanded="false"
+                   aria-controls="collapseConnectFourDetail">
+                    See more...
+                </a>
+                <div class="collapse" id="collapseConnectFourDetail">
+                    <hr>
+                    <ul>
+                        <li>Tracks position of mouse to preview drop column</li>
+                        <li>Keeps track of next player to move</li>
+                        <li>Dynamically calculates all possible winning patterns</li>
+                        <li>Minimalistic layout</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project-btns justify-center">
+                <a href="https://github.com/tsangela/connect-four" target="_blank">
+                    <button type="button" class="btn btn-warning btn-md">Code</button>
+                </a>
+                <a href="https://tsangela.github.io/connect-four/" target="_blank">
+                    <button type="button" class="btn btn-info btn-md">Play</button>
+                </a>
+                <a href="#" data-toggle="modal" data-target="#connectFourModal">
+                    <button type="button" class="btn btn-danger btn-md">Pop-up</button>
+                </a>
+            </div>
+
+            <div class="justify-center">
+                <img src="images/connect-four/connect-four-0.png" alt="connect-four-0" class="connect-four-preview">
+            </div>
+        </div>
+
+        <br>
+        <div class="hr-break">
+            <i class="fab fa-pagelines fa-2x"></i>
+            <i class="fab fa-pagelines fa-2x"></i>
+            <i class="fab fa-pagelines fa-2x"></i>
+        </div>
         <br>
 
         <div id="hungrycat">
@@ -275,46 +369,63 @@
         </div>
         <br>
 
-        <!--<div id="mywebsite">-->
-            <!--<h2><span class="emphasize">angela tsang's website</span></h2>-->
-            <!--<h5><span class="languages">{html|css|javascript}</span></h5>-->
-        <!--<p>A flexible and responsive personal website hosted on GitHub pages to showcase-->
-                <!--my skills and projects. A blend of original code and some Bootstrap components-->
-                <!--&lt;!&ndash;<strike>and a pool of blood, sweat, and tears</strike>&ndash;&gt;-->
-                <!--brings you the page you surfing right this instant!-->
-                <!--<a data-toggle="collapse" href="#collapseWebsiteDetail" role="button" aria-expanded="false"-->
-                   <!--aria-controls="collapseWebsiteDetail">-->
-                    <!--See more...-->
-                <!--</a>-->
-            <!--</p>-->
+        <div id="to-do-list">
+            <!--<h2><span class="emphasize">prioritized to-do list <i class="fas fa-pencil-alt"></i></span></h2>-->
+            <h2><span class="emphasize">task manager <i class="fas fa-pencil-alt"></i></span></h2>
+            <h5><span class="languages">{xml|java}</span></h5>
 
-            <!--<div class="collapse" id="collapseWebsiteDetail">-->
-                <!--<ul>-->
-                    <!--<li>Utilized Twitter Bootstrap framework</li>-->
-                    <!--<li>Flexible and responsive</li>-->
-                    <!--<li>Original layout</li>-->
-                <!--</ul>-->
-            <!--</div>-->
+            <div class="container-gradient project-desc">
+                A simple task management Android application. Keep track of your everyday tasks and set priority
+                levels to highlight the important ones. Completed tasks can be checked off to be removed from the list.
+                <a data-toggle="collapse" href="#collapseToDoDetail" role="button" aria-expanded="false"
+                   aria-controls="collapseToDoDetail">
+                    See more...
+                </a>
+                <div class="collapse" id="collapseToDoDetail">
+                    <hr>
+                    <ul>
+                        <li>Created on Android Studio</li>
+                        <li>Implemented priority feature to distinguish items of importance</li>
+                        <li>Easy and straightforward to use</li>
+                        <li>Minimalistic layout</li>
+                    </ul>
+                </div>
+            </div>
 
-            <!--<a href="https://github.com/tsangela/tsangela.github.io" target="_blank">-->
-                <!--<button type="button" class="btn btn-danger btn-md">Code</button>-->
-            <!--</a>-->
-        <!--</div>-->
+            <div class="project-btns justify-center">
+                <a href="https://github.com/tsangela/PrioritizedToDoList" target="_blank">
+                    <button type="button" class="btn btn-warning btn-md">Code</button>
+                </a>
+                <a href="https://github.com/tsangela/PrioritizedToDoList/raw/master/app-release.apk">
+                    <button type="button" class="btn btn-info btn-md">Download</button>
+                </a>
+            </div>
 
-        <!--<br>-->
-        <!--<div class="hr-break">-->
-            <!--<i class="fab fa-pagelines fa-2x"></i>-->
-            <!--<i class="fab fa-pagelines fa-2x"></i>-->
-            <!--<i class="fab fa-pagelines fa-2x"></i>-->
-        <!--</div>-->
-        <!--<br>-->
+            <div class="justify-center">
+                <ul class="todo-preview">
+                    <li><img src="images/todo/todo-1.png" alt="todo-1"></li>
+                    <li><img src="images/todo/todo-2.png" alt="todo-2"></li>
+                    <li><img src="images/todo/todo-3.png" alt="todo-3"></li>
+                    <li><img src="images/todo/todo-4.png" alt="todo-4"></li>
+                    <li><img src="images/todo/todo-5.png" alt="todo-5"></li>
+                </ul>
+            </div>
+        </div>
 
-        <div id="mythemes" class="project-right">
+        <br>
+        <div class="hr-break">
+            <i class="fab fa-pagelines fa-2x"></i>
+            <i class="fab fa-pagelines fa-2x"></i>
+            <i class="fab fa-pagelines fa-2x"></i>
+        </div>
+        <br>
+
+        <div id="mythemes">
             <h2><span class="emphasize">website themes <i class="fas fa-laptop"></i></span></h2>
             <h5><span class="languages">{html|css|javascript}</span></h5>
             <div class="container-gradient project-desc">
-                A building collection of completely custom website themes of various designs. Designs
-                for personal blogs, professional portfolios, and more!
+                A building collection of completely custom website themes for the casual blogger, professional, etc.
+                Various designs for various people!
                 <a data-toggle="collapse" href="#collapseThemesDetail" role="button" aria-expanded="false"
                    aria-controls="collapseThemesDetail">
                     See more...
@@ -528,185 +639,44 @@
             </div>
         </div>
 
-        <br>
-        <div class="hr-break">
-            <i class="fab fa-pagelines fa-2x"></i>
-            <i class="fab fa-pagelines fa-2x"></i>
-            <i class="fab fa-pagelines fa-2x"></i>
-        </div>
-        <br>
-
-        <div id="to-do-list">
-            <!--<h2><span class="emphasize">prioritized to-do list <i class="fas fa-pencil-alt"></i></span></h2>-->
-            <h2><span class="emphasize">task manager <i class="fas fa-pencil-alt"></i></span></h2>
-            <h5><span class="languages">{xml|java}</span></h5>
-
-            <div class="container-gradient project-desc">
-                A simple task management Android application. Keep track of your everyday tasks and set priority
-                levels to highlight the important ones. Completed tasks can be checked off to be removed from the list.
-                <a data-toggle="collapse" href="#collapseToDoDetail" role="button" aria-expanded="false"
-                   aria-controls="collapseToDoDetail">
-                    See more...
-                </a>
-                <div class="collapse" id="collapseToDoDetail">
-                    <hr>
-                    <ul>
-                        <li>Created on Android Studio</li>
-                        <li>Implemented priority feature to distinguish items of importance</li>
-                        <li>Easy and straightforward to use</li>
-                        <li>Minimalistic layout</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="project-btns justify-center">
-                <a href="https://github.com/tsangela/PrioritizedToDoList" target="_blank">
-                    <button type="button" class="btn btn-warning btn-md">Code</button>
-                </a>
-                <a href="https://github.com/tsangela/PrioritizedToDoList/raw/master/app-release.apk">
-                    <button type="button" class="btn btn-info btn-md">Download</button>
-                </a>
-            </div>
-
-            <div class="justify-center">
-                <ul class="todo-preview">
-                    <li><img src="images/todo/todo-1.png" alt="todo-1"></li>
-                    <li><img src="images/todo/todo-2.png" alt="todo-2"></li>
-                    <li><img src="images/todo/todo-3.png" alt="todo-3"></li>
-                    <li><img src="images/todo/todo-4.png" alt="todo-4"></li>
-                    <li><img src="images/todo/todo-5.png" alt="todo-5"></li>
-                </ul>
-            </div>
-        </div>
-
-        <br>
-        <div class="hr-break">
-            <i class="fab fa-pagelines fa-2x"></i>
-            <i class="fab fa-pagelines fa-2x"></i>
-            <i class="fab fa-pagelines fa-2x"></i>
-        </div>
-        <br>
-
-        <div id="connect-four">
-            <h2><span class="emphasize">connect four <i class="fas fa-gamepad"></i></span></h2>
-            <h5><span class="languages">{react|css|javascript}</span></h5>
-
-            <div class="container-gradient project-desc">
-                The classic childhood game brought to the web! First player to place four chips in a line wins.
-                <a data-toggle="collapse" href="#collapseConnectFourDetail" role="button" aria-expanded="false"
-                   aria-controls="collapseConnectFourDetail">
-                    See more...
-                </a>
-                <div class="collapse" id="collapseConnectFourDetail">
-                    <hr>
-                    <ul>
-                        <li>Tracks position of mouse to preview drop column</li>
-                        <li>Keeps track of next player to move</li>
-                        <li>Dynamically calculates all possible winning patterns</li>
-                        <li>Minimalistic layout</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="project-btns justify-center">
-                <a href="https://github.com/tsangela/connect-four" target="_blank">
-                    <button type="button" class="btn btn-warning btn-md">Code</button>
-                </a>
-                <a href="https://tsangela.github.io/connect-four/" target="_blank">
-                    <button type="button" class="btn btn-info btn-md">Play</button>
-                </a>
-                <a href="#" data-toggle="modal" data-target="#connectFourModal">
-                    <button type="button" class="btn btn-danger btn-md">Pop-up</button>
-                </a>
-            </div>
-
-            <div class="justify-center">
-                <img src="images/connect-four/connect-four-0.png" alt="connect-four-0" class="connect-four-preview">
-            </div>
-        </div>
-
-        <br>
-        <div class="hr-break">
-            <i class="fab fa-pagelines fa-2x"></i>
-            <i class="fab fa-pagelines fa-2x"></i>
-            <i class="fab fa-pagelines fa-2x"></i>
-        </div>
-        <br>
-
-        <div id="you-decide">
-            <h2><span class="emphasize">you decide <i class="fas fa-utensils"></i></span></h2>
-            <h5><span class="languages">{react|css|javascript}</span></h5>
-
-            <div class="container-gradient project-desc">
-                Never not know where to eat, drink, etc. again! This web app will retrieve and display
-                options near you and even choose one for you if you so desire.
-                <a data-toggle="collapse" href="#collapseYouDecideDetail" role="button" aria-expanded="false"
-                   aria-controls="collapseYouDecideDetail">
-                    See more...
-                </a>
-                <div class="collapse" id="collapseYouDecideDetail">
-                    <hr>
-                    <ul>
-                        <li>Retrieve places using the Google Places API near the user's geolocation</li>
-                        <li>Dynamically display name and metadata of the retrieved places</li>
-                        <li>Randomly select a place for the indecisive user</li>
-                        <li>Supports finding nearby restaurants, cafes, bakeries, and bars</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="project-btns justify-center">
-                <a href="https://github.com/tsangela/you-decide" target="_blank">
-                    <button type="button" class="btn btn-warning btn-md">Code</button>
-                </a>
-                <a href="https://tsangela.github.io/you-decide/" target="_blank">
-                    <button type="button" class="btn btn-info btn-md">Hit me up</button>
-                </a>
-            </div>
-
-            <div class="justify-center">
-                <img src="images/you-decide/modal.png" alt="you-decide-0" class="you-decide-preview">
-            </div>
-        </div>
-
     </div>
 </div>
 
 <div class="container-fluid">
-    <div class="row">
-        <div class="col-lg">
-            <div id="about">
-                <h1><i class="fas fa-user-astronaut"></i> about me <span class="header-link"><a href="#about">#</a></span></h1>
-                <div class="row">
-                    <div class="col-sm-auto me" align="center">
-                        <img src="images/me.png" alt="Me!">
-                    </div>
-                    <div class="col-sm">
-                        <br>
-                        <p>My name is <span class="emphasize">Angela Tsang</span> and I am a fourth year B.Sc. Computer Science
-                            student at the beautiful University of British Columbia, home of the Thunderbirds. Here, you will
-                            find some small projects I have been working on. In my free time, I can be found taking strolls with
-                            my dogs, playing music with friends, and fiddling with code and such.
-                        </p>
-                    </div>
-                </div>
+    <div id="about">
+        <h1>
+            <span class="header-section"><i class="fas fa-user-astronaut"></i> about me</span>
+            <span class="header-link"><a href="#about">#</a></span>
+        </h1>
+        <div class="row">
+            <div class="col-sm-auto me" align="center">
+                <img src="images/me.png" alt="Me!">
+            </div>
+            <div class="col-sm about-desc">
+                <br>
+                <p>My name is <span class="emphasize">Angela Tsang</span> and I am a fourth year B.Sc. Computer Science
+                    student at the beautiful University of British Columbia, home of the Thunderbirds. Here, you will
+                    find some small projects I have been working on. In my free time, I can be found taking strolls with
+                    my dogs, playing music with friends, and fiddling with code and such.
+                </p>
             </div>
         </div>
-        <div class="col-sm-auto">
-            <div id="contact">
-                <h1><i class="fas fa-envelope"></i> contact me <span class="header-link"><a href="#contact">#</a></span></h1>
-                <div class="contact-btns">
-                    <a href="https://github.com/tsangela/" target="_blank">
-                        <i class="fab fa-github-square fa-4x"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/tsangela" target="_blank">
-                        <i class="fab fa-linkedin fa-4x"></i>
-                    </a>
-                    <a href="mailto:angela.tsang@alumni.ubc.ca">
-                        <i class="fas fa-envelope-square fa-4x"></i>
-                    </a>
-                </div>
-            </div>
+    </div>
+    <div id="contact">
+        <h1>
+            <span class="header-section"><i class="fas fa-envelope"></i> contact me</span>
+            <span class="header-link"><a href="#contact">#</a></span>
+        </h1>
+        <div class="contact-btns">
+            <a href="https://github.com/tsangela/" target="_blank">
+                <i class="fab fa-github-square fa-4x"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/tsangela" target="_blank">
+                <i class="fab fa-linkedin fa-4x"></i>
+            </a>
+            <a href="mailto:angela.tsang@alumni.ubc.ca">
+                <i class="fas fa-envelope-square fa-4x"></i>
+            </a>
         </div>
     </div>
 </div>
@@ -725,6 +695,7 @@
             </div>
             <div class="modal-body">
                 <ul class="list-group list-group-flush">
+                    <li class="list-group-item push-right">&#9758; 12.05.19 - <a href="#you-decide">You Decide</a></li>
                     <li class="list-group-item push-right">&#9758; 02.16.19 - <a href="#connect-four">Connect Four</a></li>
                     <li class="list-group-item push-right">&#9758; 01.12.19 - <a href="">New site layout!</a></li>
                     <li class="list-group-item push-right">&#9758; 09.08.18 - <a href="#to-do-list">To-Do List App</a></li>
@@ -753,11 +724,6 @@
         </div>
     </div>
 </div>
-
-<!--Bookmark-->
-<!--<div class="bookmark">-->
-    <!--<i class="fas fa-bookmark fa-8x"></i>-->
-<!--</div>-->
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>

@@ -6,18 +6,9 @@ body {
     width: 100%;
     height: 100%;
     background-color: white;
-    cursor: crosshair;
     font-family: "Andale Mono", monospace;
     font-size: 14px;
 }
-
-/*::selection {*/
-    /*background: powderblue;*/
-/*}*/
-
-/*::-moz-selection {*/
-    /*background: navajowhite;*/
-/*}*/
 
 summary {
     padding-left: 5px;
@@ -31,24 +22,11 @@ hr {
 
 a {
     color: coral;
-    /*color: cadetblue;*/
 }
 
 a:hover {
     color: #d56a46;
 }
-
-/*.bookmark {*/
-    /*position: absolute;*/
-    /*top: -25px;*/
-    /*right: 30px;*/
-    /*color: ghostwhite;*/
-    /*transition: .5s ease;*/
-/*}*/
-
-/*.bookmark:hover {*/
-    /*top: -8px;*/
-/*}*/
 
 .emphasize {
     -webkit-transition: .2s ease-in-out;
@@ -61,7 +39,6 @@ a:hover {
 .emphasize:hover {
     padding: 2px;
     letter-spacing: 1px;
-    /*background-color: darksalmon;*/
     background-color: coral;
     color: white;
 }
@@ -154,33 +131,27 @@ span.welcome-title {
 .welcome-description {
     margin-left: 5px;
     color: ghostwhite;
-    /*color: white;*/
     width: 80%;
     max-width: 450px;
 }
 
 .welcome-description > p {
     font-family: "Microsoft Yi Baiti", sans-serif;
-    /*font: caption;*/
-    font-size: 14px;
-    /*text-align: justify;*/
+    font-size: 16px;
 }
 
 .nav > .row {
     margin-left: 5px;
 }
 
-.nav .desc {
-    /*opacity: 0;*/
-    /*display: none;*/
+#nav-buttons .desc {
     visibility: hidden;
     color: ghostwhite;
     font-family: 'VT323', monospace;
-    padding-left: 5px;
-    /*font-size: 12px;*/
+    padding-left: 10px;
 }
 
-.nav a {
+#nav-buttons a {
     padding: 5px 2px;
     color: ghostwhite;
     margin: 10px 10px 0 10px;
@@ -191,7 +162,7 @@ span.welcome-title {
     transition: .2s ease-in-out;
 }
 
-.nav a:hover {
+#nav-buttons a:hover {
     /*color: #68E6CA;*/
     margin-top: 0;
 }
@@ -210,18 +181,17 @@ nav .dropdown-menu {
 
 .navbar {
     background-color: floralwhite;
-    opacity: 0.85;
+    /*opacity: 0.85;*/
     -webkit-transition: .2s ease-in-out;
     -moz-transition: .2s ease-in-out;
     -ms-transition: .2s ease-in-out;
     -o-transition: .2s ease-in-out;
     transition: .2s ease-in-out;
-    /*font-family: 'VT323', monospace;*/
 }
 
-.navbar:hover {
-    opacity: 1;
-}
+/*.navbar:hover {*/
+    /*opacity: 1;*/
+/*}*/
 
 #projects-dropdown-divider {
     margin: 0;
@@ -256,14 +226,36 @@ h1, h2, h3, h4 {
     font-family: Didot, serif;
 }
 
+h1 {
+    margin-bottom: 20px;
+}
+
+h1 span.header-section {
+    position: absolute;
+    left: -100px;
+    width: fit-content;
+    padding: 0.5rem 1.5rem 0.5rem 150px;
+
+    background: black;
+    color: white;
+    border: 1px solid black;
+    border-radius: 50px;
+
+    -webkit-transition: ease 0.2s;
+    -moz-transition: ease 0.2s;
+    -ms-transition: ease 0.2s;
+    -o-transition: ease 0.2s;
+    transition: ease 0.2s;
+}
+
+h1 span.header-section:hover {
+    left: -80px;
+}
+
 .header-link a {
+    margin-left: 10px;
     opacity: 0;
     color: peachpuff;
-    -webkit-transition: .2s ease-in-out;
-    -moz-transition: .2s ease-in-out;
-    -ms-transition: .2s ease-in-out;
-    -o-transition: .2s ease-in-out;
-    transition: .2s ease-in-out;
 }
 
 .header-link a:hover {
@@ -463,12 +455,20 @@ div.section {
     border-color: powderblue;
 }
 
+#contact .contact-btns {
+    margin-top: 30px;
+}
+
 /* for tablets:
 ----------------------------------------------------------------------*/
 @media only screen and (min-width: 600px) {
 
     span.welcome-title {
         font-size: 80px;
+    }
+
+    .welcome-description > p {
+        font-size: 18px;
     }
 
     /* projects
@@ -481,6 +481,14 @@ div.section {
 
     .todo-preview li {
         scroll-snap-align: none;
+    }
+
+    /* about
+
+     */
+
+    #about .about-desc {
+        max-width: 450px;
     }
 }
 
@@ -550,9 +558,13 @@ div.section {
 }
 
 @media only screen and (min-width: 1000px) {
-    /*div.column {*/
-        /*width: 50%;*/
-    /*}*/
+    .welcome-description {
+        max-width: 500px;
+    }
+
+    .welcome-description > p {
+        font-size: 20px;
+    }
 
     #hungrycat {
         background-size: 360px;
@@ -576,16 +588,10 @@ div.section {
 
     .welcome-subtitle h4 {
         font-size: 40px;
-        /*font-size: 5vw;*/
     }
 
-    .welcome-description {
-        max-width: 600px;
-    }
-
-    .welcome-description p {
+    .welcome-description > p {
         font-size: 24px;
-        /*font-size: 3vw;*/
     }
 
     .nav i {
