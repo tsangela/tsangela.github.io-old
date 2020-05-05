@@ -17,8 +17,8 @@ function showDesc(id) {
     // document.getElementById(id).style.display = 'block';
     document.getElementById(id).style.visibility = 'visible';
 }
+
 function hideDesc(id) {
     // document.getElementById(id).style.display = 'invisible';
     document.getElementById(id).style.visibility = 'hidden';
 }
-
